@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "stringy:cotton_boll"
+    },
+    {
+      "item": "stringy:cotton_boll"
+    },
+    {
+      "item": "stringy:cotton_boll"
+    }
+  ],
+  "result": {
+    "item": "minecraft:string",
+    "count": 2
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "stringy:block/tinted_shrub",
+  "textures": {
+    "tinted": "stringy:block/cotton_overlay_7",
+    "untinted": "stringy:block/cotton_7"
+  }
+}
