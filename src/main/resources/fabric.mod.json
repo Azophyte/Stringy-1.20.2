@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "stringy",
+	"version": "${version}",
+	"name": "Stringy",
+	"description": "Adds renewable vegan alternatives to various items, reducing lag substantially",
+	"authors": [
+		"Azophyte"
+	],
+	"contact": {
+		"homepage": "WIP",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/stringy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.azo.stringy.Stringy"
+		],
+		"client": [
+			"net.azo.stringy.StringyClient"
+		],
+		"fabric-datagen": [
+			"net.azo.stringy.StringyDataGenerator"
+		]
+	},
+	"mixins": [
+		"stringy.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.23",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
