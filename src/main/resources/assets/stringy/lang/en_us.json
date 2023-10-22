@@ -11,7 +11,6 @@
   "tooltip.stringy.cotton_boll": "§7Can be planted on farmland",
   "item.stringy.pampas_grass_seeds": "Pampas Grass Seeds",
   "block.stringy.pampas_grass_crop": "Pampas Grass",
-  "block.stringy.white_pampas_grass_plume": "White Pampas Grass Plume",
-  "tooltip.stringy.pampas_grass_seeds": "§7A source of feathers and dye"
-
+  "block.stringy.pampas_grass_plume": "White Pampas Grass Plume",
+  "tooltip.stringy.pampas_grass_seeds": "§7Plant on farmland for a source of feathers"
 }

@@ -10,8 +10,8 @@ import net.minecraft.client.render.RenderLayer;
 
 public class ModWorldRendering {
     static Block[] tintedBlocks = {ModBlocks.COTTON_SHRUB, ModBlocks.POTTED_COTTON, ModBlocks.COTTON_CROP};
-    static Block[] cutOutBlocks = {ModBlocks.COTTON_SHRUB, ModBlocks.POTTED_COTTON, ModBlocks.COTTON_CROP, ModBlocks.PAMPAS_GRASS_CROP,
-    ModBlocks.WHITE_PAMPAS_GRASS_PLUME};
+    static Block[] cutOutBlocks = {ModBlocks.COTTON_SHRUB, ModBlocks.POTTED_COTTON, ModBlocks.COTTON_CROP,
+            ModBlocks.PAMPAS_GRASS_CROP, ModBlocks.PAMPAS_GRASS_PLUME};
 
     //Makes blocks in this array transparent (otherwise transparent textures will be black)
     public static void CutOutBlocks(){

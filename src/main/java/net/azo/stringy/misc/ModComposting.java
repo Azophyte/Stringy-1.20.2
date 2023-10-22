@@ -8,5 +8,6 @@ public class ModComposting {
     public static void AddItemsToCompostingRegistry(){
         CompostingChanceRegistry.INSTANCE.add(ModItems.COTTON_BOLL,0.30F);
         CompostingChanceRegistry.INSTANCE.add(ModBlocks.COTTON_SHRUB,0.65F);
+        CompostingChanceRegistry.INSTANCE.add(ModItems.PAMPAS_GRASS_SEEDS,0.30F);
     }
 }

@@ -1,4 +1,4 @@
-package net.azo.stringy.block;
+package net.azo.stringy.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
