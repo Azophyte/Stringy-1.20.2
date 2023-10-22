@@ -19,6 +19,7 @@ public class ModItemGroups {
                         //Put items here lol
                         entries.add(ModItems.COTTON_BOLL);
                         entries.add(ModBlocks.COTTON_SHRUB);
+                        entries.add(ModItems.CANVAS);
 
                     }).build());
 

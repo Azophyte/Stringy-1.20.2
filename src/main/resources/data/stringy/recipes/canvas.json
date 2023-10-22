@@ -2,16 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
+    "C": {
       "item": "stringy:cotton_boll"
+    },
+    "S": {
+      "item": "minecraft:string"
     }
   },
   "pattern": [
-    "##",
-    "##"
+    "SCS",
+    "CSC",
+    "SCS"
   ],
   "result": {
-    "item": "minecraft:white_wool",
+    "item": "stringy:canvas",
     "count": 1
   }
 }

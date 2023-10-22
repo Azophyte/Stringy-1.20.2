@@ -1,5 +1,17 @@
 {
+  "advancements.stringy.get_cotton_boll.description": "Obtain your first boll of cotton",
+  "advancements.stringy.get_cotton_boll.title": "No, it's not a typo",
+  "advancements.stringy.root.description": "Ramble carefree into the world of Stringy!",
+  "advancements.stringy.root.title": "Stringy",
+  "block.stringy.cotton_shrub": "Cotton Shrub",
+  "item.stringy.canvas": "Canvas",
   "item.stringy.cotton_boll": "Cotton Boll",
   "itemgroup.stringy": "Stringy",
-  "block.stringy.cotton_shrub": "Cotton Shrub"
+  "tooltip.stringy.canvas": "§7Cotton based leather alternative",
+  "tooltip.stringy.cotton_boll": "§7Can be planted on farmland",
+  "item.stringy.pampas_grass_seeds": "Pampas Grass Seeds",
+  "block.stringy.pampas_grass_crop": "Pampas Grass",
+  "block.stringy.white_pampas_grass_plume": "White Pampas Grass Plume",
+  "tooltip.stringy.pampas_grass_seeds": "§7A source of feathers and dye"
+
 }

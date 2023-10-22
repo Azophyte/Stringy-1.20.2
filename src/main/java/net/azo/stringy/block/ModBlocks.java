@@ -1,13 +1,14 @@
 package net.azo.stringy.block;
 
 import net.azo.stringy.Stringy;
+import net.azo.stringy.block.labelled_chest.LabelledChestBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.block.entity.ChestBlockEntity;
 import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -19,12 +20,33 @@ public class ModBlocks {
 
     public static final Block COTTON_SHRUB = registerBlock("cotton_shrub",
             new CottonShrubBlock(FabricBlockSettings.create().mapColor(MapColor.OFF_WHITE).
-                    noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS)
+                    noCollision().breakInstantly().sounds(BlockSoundGroup.CROP)
                     .offset(AbstractBlock.OffsetType.XZ).burnable()
                     .pistonBehavior(PistonBehavior.DESTROY)));
 
+    public static final Block POTTED_COTTON = registerBlockWithoutItem("potted_cotton_shrub",
+            new FlowerPotBlock(COTTON_SHRUB, FabricBlockSettings.copy(Blocks.POTTED_FERN).mapColor(MapColor.OFF_WHITE)));
+
+    public static final Block COTTON_CROP = registerBlockWithoutItem("cotton_crop",
+            new CottonCropBlock(FabricBlockSettings.create().mapColor(MapColor.OFF_WHITE).noCollision().ticksRandomly()
+                    .breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).burnable()));
+
+    public static final Block PAMPAS_GRASS_CROP = registerBlockWithoutItem("pampas_grass_crop",
+            new CottonCropBlock(FabricBlockSettings.create().mapColor(MapColor.GREEN).noCollision().ticksRandomly()
+                    .breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY).burnable()));
+
+    public static final Block WHITE_PAMPAS_GRASS_PLUME = registerBlockWithoutItem("white_pampas_grass_plume",
+            new TransparentBlock(FabricBlockSettings.copyOf(ModBlocks.PAMPAS_GRASS_CROP).notSolid().nonOpaque().collidable(false)));
+
+    public static final Block LABELLED_CHEST = registerBlock("labelled_chest",
+            new LabelledChestBlock(FabricBlockSettings.copy(Blocks.CHEST), () -> BlockEntityType.CHEST));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, new Identifier(Stringy.MOD_ID, name), block);
+    }
+
+    private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(Stringy.MOD_ID, name), block);
     }
 

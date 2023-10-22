@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "stringy:cotton_shrub"
+    },
+    "title": {
+      "translate": "advancements.stringy.root.title"
+    },
+    "description": {
+      "translate": "advancements.stringy.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/black_wool.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "stringy:cotton_boll"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
+

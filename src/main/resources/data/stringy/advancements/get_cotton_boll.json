@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "stringy:cotton_boll"
+    },
+    "title": {
+      "translate": "advancements.stringy.get_cotton_boll.title"
+    },
+    "description": {
+      "translate": "advancements.stringy.get_cotton_boll.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "stringy:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "stringy:cotton_boll"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 17
+  }
+}

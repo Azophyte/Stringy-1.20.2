@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "stringy:block/cotton_7"
+      "model": "stringy:block/cotton_crop_7"
     }
   }
 }

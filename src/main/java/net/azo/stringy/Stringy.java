@@ -1,17 +1,14 @@
 package net.azo.stringy;
 
 import net.azo.stringy.block.ModBlocks;
+import net.azo.stringy.misc.ModFuelRegistry;
+import net.azo.stringy.world.gen.ModFeatureGeneration;
 import net.azo.stringy.item.ModItemGroups;
 import net.azo.stringy.item.ModItems;
+import net.azo.stringy.misc.ModComposting;
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.minecraft.item.ItemStack;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,6 +31,9 @@ public class Stringy implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
 		ModBlocks.RegisterModBlocks();
-		LOGGER.info(MOD_ID + "initialised successfully!!!! :D");
+		ModComposting.AddItemsToCompostingRegistry();
+		ModFeatureGeneration.generateVegetation();
+		ModFuelRegistry.AddItemsToFuelRegistry();
+		LOGGER.info(MOD_ID + " initialised successfully!!!! :D");
 	}
 }

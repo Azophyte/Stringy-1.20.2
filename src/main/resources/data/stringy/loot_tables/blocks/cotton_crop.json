@@ -19,6 +19,13 @@
                       "minecraft:shears"
                     ]
                   }
+                },
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "stringy:cotton_crop",
+                  "properties": {
+                    "age": "7"
+                  }
                 }
               ]
             },
@@ -33,6 +40,15 @@
                   "parameters": {
                     "extra": 4,
                     "probability": 0.55
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "stringy:cotton_crop",
+                  "properties": {
+                    "age": "7"
                   }
                 }
               ]
