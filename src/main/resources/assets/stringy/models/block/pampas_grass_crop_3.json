@@ -1,6 +1,6 @@
 {
 	"parent": "stringy:block/pampas_grass_base",
 	"textures": {
-		"texture": "stringy:block/pampas_grass_crop_7"
+		"texture": "stringy:block/pampas_grass_crop_3"
 	}
 }

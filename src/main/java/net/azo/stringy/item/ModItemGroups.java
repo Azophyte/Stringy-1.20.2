@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.COTTON_BOLL);
                         entries.add(ModBlocks.COTTON_SHRUB);
                         entries.add(ModItems.CANVAS);
+                        entries.add(ModItems.PAMPAS_GRASS_SEEDS);
 
                     }).build());
 
