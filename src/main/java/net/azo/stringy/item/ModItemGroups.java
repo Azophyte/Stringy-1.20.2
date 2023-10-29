@@ -16,11 +16,22 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.stringy"))
                     .icon(() -> new ItemStack(ModItems.COTTON_BOLL)).entries((displayContext, entries) -> {
 
-                        //Put items here lol
-                        entries.add(ModItems.COTTON_BOLL);
+                        //Put blocks here lol
+                        entries.add(ModBlocks.APATITE_BLOCK);
+                        entries.add(ModBlocks.APATITE_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_APATITE_ORE);
                         entries.add(ModBlocks.COTTON_SHRUB);
+                        entries.add(ModBlocks.PAMPAS_GRASS_BOUQUET);
+
+                        //Put items here lol
+                        entries.add(ModItems.APATITE);
+                        entries.add(ModItems.APATITE_FERTILIZER);
                         entries.add(ModItems.CANVAS);
+                        entries.add(ModItems.CHARCOAL_INK);
+                        entries.add(ModItems.COTTON_BOLL);
+                        entries.add(ModItems.GLOW_BERRY_INK);
                         entries.add(ModItems.PAMPAS_GRASS_SEEDS);
+                        entries.add(ModItems.POTASH);
 
                     }).build());
 

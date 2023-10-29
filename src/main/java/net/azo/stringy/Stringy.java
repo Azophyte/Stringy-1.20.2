@@ -33,6 +33,7 @@ public class Stringy implements ModInitializer {
 		ModBlocks.RegisterModBlocks();
 		ModComposting.AddItemsToCompostingRegistry();
 		ModFeatureGeneration.generateVegetation();
+		ModFeatureGeneration.generateOres();
 		ModFuelRegistry.AddItemsToFuelRegistry();
 		LOGGER.info(MOD_ID + " initialised successfully!!!! :D");
 	}

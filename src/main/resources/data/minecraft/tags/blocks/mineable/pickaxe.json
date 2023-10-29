@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "stringy:apatite_block",
+    "stringy:apatite_ore",
+    "stringy:deepslate_apatite_ore"
+  ]
+}
