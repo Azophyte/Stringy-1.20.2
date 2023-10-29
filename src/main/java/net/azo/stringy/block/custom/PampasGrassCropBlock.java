@@ -36,4 +36,9 @@ public class PampasGrassCropBlock extends CropBlock {
     public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state) {
         return world.getBlockState(pos.up()).equals(Blocks.AIR.getDefaultState());
     }
+
+    @Override
+    public boolean hasRandomTicks(BlockState state) {
+        return true;
+    }
 }

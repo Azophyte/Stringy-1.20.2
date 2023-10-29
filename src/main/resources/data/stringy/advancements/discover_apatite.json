@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "stringy:apatite"
+    },
+    "title": {
+      "translate": "advancements.stringy.discover_apatite.title"
+    },
+    "description": {
+      "translate": "advancements.stringy.discover_apatite.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "stringy:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "stringy:apatite",
+              "stringy:apatite_ore",
+              "stringy:deepslate_apatite_ore",
+              "stringy:apatite_fertilizer",
+              "stringy:appatite_block"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 17
+  }
+}

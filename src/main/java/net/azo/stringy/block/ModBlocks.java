@@ -17,30 +17,46 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
-    public static final Block COTTON_SHRUB = registerBlock("cotton_shrub",
-            new CottonShrubBlock(FabricBlockSettings.create().mapColor(MapColor.OFF_WHITE).
-                    noCollision().breakInstantly().sounds(BlockSoundGroup.CROP)
-                    .offset(AbstractBlock.OffsetType.XZ).burnable()
-                    .pistonBehavior(PistonBehavior.DESTROY)));
+    //APATITE BLOCKS
+        public static final Block APATITE_BLOCK = registerBlock("apatite_block",
+                new Block(FabricBlockSettings.copyOf(Blocks.COAL_BLOCK).mapColor(MapColor.CYAN)));
+        public static final Block APATITE_ORE = registerBlock("apatite_ore",
+                new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.COAL_ORE).mapColor(MapColor.CYAN), UniformIntProvider.create(0, 4)));
+        public static final Block DEEPSLATE_APATITE_ORE = registerBlock("deepslate_apatite_ore",
+                new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_COAL_ORE).mapColor(MapColor.CYAN), UniformIntProvider.create(0, 4)));
 
-    public static final Block POTTED_COTTON = registerBlockWithoutItem("potted_cotton_shrub",
-            new FlowerPotBlock(COTTON_SHRUB, FabricBlockSettings.copy(Blocks.POTTED_FERN).mapColor(MapColor.OFF_WHITE)));
+    //COTTON BLOCKS
+        public static final Block COTTON_SHRUB = registerBlock("cotton_shrub",
+                new CottonShrubBlock(FabricBlockSettings.create().mapColor(MapColor.OFF_WHITE).
+                        noCollision().breakInstantly().sounds(BlockSoundGroup.CROP)
+                        .offset(AbstractBlock.OffsetType.XZ).burnable()
+                        .pistonBehavior(PistonBehavior.DESTROY)));
 
-    public static final Block COTTON_CROP = registerBlockWithoutItem("cotton_crop",
-            new CottonCropBlock(FabricBlockSettings.create().mapColor(MapColor.OFF_WHITE).noCollision().ticksRandomly()
-                    .breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).burnable()));
+        public static final Block POTTED_COTTON = registerBlockWithoutItem("potted_cotton_shrub",
+                new FlowerPotBlock(COTTON_SHRUB, FabricBlockSettings.copy(Blocks.POTTED_FERN).mapColor(MapColor.OFF_WHITE)));
 
+        public static final Block COTTON_CROP = registerBlockWithoutItem("cotton_crop",
+                new CottonCropBlock(FabricBlockSettings.create().mapColor(MapColor.OFF_WHITE).noCollision().ticksRandomly()
+                        .breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).burnable()));
 
+    //PAMPAS GRASS BLOCKS
 
-    public static final Block PAMPAS_GRASS_PLUME = registerBlockWithoutItem("pampas_grass_plume",
-            new PampasGrassPlumeBlock(FabricBlockSettings.create().mapColor(MapColor.WHITE).noCollision().ticksRandomly()
-                    .breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY).burnable()));
-    public static final Block PAMPAS_GRASS_CROP = registerBlockWithoutItem("pampas_grass_crop",
-            new PampasGrassCropBlock(FabricBlockSettings.create().mapColor(MapColor.GREEN).noCollision().ticksRandomly()
-                    .breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY).burnable()));
+        public static final Block PAMPAS_GRASS_PLUME = registerBlockWithoutItem("pampas_grass_plume",
+                new PampasGrassPlumeBlock(FabricBlockSettings.create().mapColor(MapColor.WHITE).noCollision().ticksRandomly()
+                        .breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY).burnable()));
+        public static final Block PAMPAS_GRASS_CROP = registerBlockWithoutItem("pampas_grass_crop",
+                new PampasGrassCropBlock(FabricBlockSettings.create().mapColor(MapColor.GREEN).noCollision().ticksRandomly()
+                        .breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY).burnable()));
+
+        public static final Block PAMPAS_GRASS_BOUQUET = registerBlock("pampas_grass_bouquet",
+                new TallPlantBlock(FabricBlockSettings.copyOf(PAMPAS_GRASS_PLUME)));
+
+        public static final Block POTTED_PAMPAS_GRASS_BOUQUET = registerBlockWithoutItem("potted_pampas_grass_bouquet",
+                new FlowerPotBlock(PAMPAS_GRASS_BOUQUET, FabricBlockSettings.copy(Blocks.POTTED_FERN).mapColor(MapColor.OFF_WHITE)));
 
 
     public static final Block LABELLED_CHEST = registerBlock("labelled_chest",

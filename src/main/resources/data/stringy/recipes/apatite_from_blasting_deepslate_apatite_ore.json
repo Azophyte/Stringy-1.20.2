@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.2,
+  "group": "apatite",
+  "ingredient": {
+    "item": "stringy:deepslate_apatite_ore"
+  },
+  "result": "stringy:apatite"
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "stringy:block/pampas_grass_crop_7"
+    },
+    "half=upper": {
+      "model": "stringy:block/pampas_grass_plume"
+    }
+  }
+}

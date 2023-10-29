@@ -1,3 +1,9 @@
-// 1.20.2	2023-10-20T19:17:14.0522025	Stringy/stringy
+// 1.20.2	2023-10-30T17:48:54.2051972	Stringy/stringy
+fa1c06ed76ae3efd98f1c10cead8ba2bcf29872b data\stringy\worldgen\placed_feature\patch_pampas_grass_bouquet_placed.json
 abef1e9cc9abcff150c9de5a7065fc924b645853 data\stringy\worldgen\placed_feature\patch_cotton_shrub_placed.json
+44c4ee76d2483b7ec2e26e60098807883e882f15 data\stringy\worldgen\placed_feature\apatite_ore_lush_placed.json
+20bbd3373178839fedeeb999b08538f14d27800c data\stringy\worldgen\configured_feature\apatite_ore_lush.json
+93d77697ce8d0ce957b4ddddc5f2c1ce5b6879ba data\stringy\worldgen\placed_feature\apatite_ore_surface_placed.json
+7bc6cf9319ad3459792a9bfb002e951dc7f433ab data\stringy\worldgen\configured_feature\apatite_ore_surface.json
 7673e002186ba57d7f4fe947a7da2b4775cd3f97 data\stringy\worldgen\configured_feature\patch_cotton_shrub.json
+81d458590610bf1695a3e7e7f1572a995880c9b7 data\stringy\worldgen\configured_feature\patch_pampas_grass_bouquet.json
