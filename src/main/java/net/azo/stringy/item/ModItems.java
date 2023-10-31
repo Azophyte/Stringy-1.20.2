@@ -9,9 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-
-import static net.azo.stringy.block.ModBlocks.COTTON_CROP;
-import static net.azo.stringy.block.ModBlocks.PAMPAS_GRASS_CROP;
+import static net.azo.stringy.block.ModBlocks.*;
 
 public class ModItems {
     public static final Item COTTON_BOLL = registerItem("cotton_boll", new ModTooltipSeedItem(COTTON_CROP, new FabricItemSettings(), "cotton_boll"));
@@ -22,6 +20,8 @@ public class ModItems {
     public static final Item APATITE = registerItem("apatite", new Item(new FabricItemSettings()));
     public static final Item APATITE_FERTILIZER = registerItem("apatite_fertilizer", new ModFertilizerItem(new FabricItemSettings(), "apatite_fertilizer"));
     public static final Item POTASH = registerItem("potash", new ModFertilizerItem(new FabricItemSettings(), "potash"));
+
+    public static final Item WOOD_BURNER = registerItem("wood_burner", new AliasedBlockItem(WOOD_BURNER_BOTTOM, new FabricItemSettings()));
 
 
 
