@@ -30,5 +30,8 @@
   "tooltip.stringy.glow_berry_ink": "§7Sustainable source of glowing ink",
   "tooltip.stringy.pampas_grass_seeds": "§7Plant on farmland for a source of feathers",
   "tooltip.stringy.apatite_fertilizer": "§7Phosphorous rich fertilizer",
-  "tooltip.stringy.potash": "§Potassium rich fertilizer"
+  "tooltip.stringy.potash": "§7Potassium rich fertilizer",
+  "block.stringy.wood_burner_top": "Wood Burner",
+  "block.stringy.wood_burner_bottom": "Wood Burner",
+  "item.stringy.wood_burner": "Wood Burner"
 }

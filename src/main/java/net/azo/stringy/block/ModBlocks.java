@@ -1,9 +1,7 @@
 package net.azo.stringy.block;
 
 import net.azo.stringy.Stringy;
-import net.azo.stringy.block.custom.CottonCropBlock;
-import net.azo.stringy.block.custom.CottonShrubBlock;
-import net.azo.stringy.block.custom.PampasGrassCropBlock;
+import net.azo.stringy.block.custom.*;
 import net.azo.stringy.block.custom.labelled_chest.LabelledChestBlock;
 import net.azo.stringy.block.custom.labelled_chest.PampasGrassPlumeBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -57,6 +55,13 @@ public class ModBlocks {
 
         public static final Block POTTED_PAMPAS_GRASS_BOUQUET = registerBlockWithoutItem("potted_pampas_grass_bouquet",
                 new FlowerPotBlock(PAMPAS_GRASS_BOUQUET, FabricBlockSettings.copy(Blocks.POTTED_FERN).mapColor(MapColor.OFF_WHITE)));
+
+    //WOOD BURNER BLOCKS
+
+        public static final Block WOOD_BURNER_BOTTOM = registerBlockWithoutItem("wood_burner_bottom",
+                new WoodBurnerBlock(FabricBlockSettings.create().mapColor(MapColor.TERRACOTTA_WHITE).requiresTool().strength(25f, 600f).sounds(BlockSoundGroup.METAL).nonOpaque()));
+        public static final Block WOOD_BURNER_TOP = registerBlockWithoutItem("wood_burner_top",
+                new WoodBurnerTopBlock(FabricBlockSettings.copyOf(WOOD_BURNER_BOTTOM)));
 
 
     public static final Block LABELLED_CHEST = registerBlock("labelled_chest",
