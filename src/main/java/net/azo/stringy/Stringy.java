@@ -1,7 +1,9 @@
 package net.azo.stringy;
 
 import net.azo.stringy.block.ModBlocks;
+import net.azo.stringy.block.custom.entity.ModBlockEntities;
 import net.azo.stringy.misc.ModFuelRegistry;
+import net.azo.stringy.screen.ModScreenHandlers;
 import net.azo.stringy.world.gen.ModFeatureGeneration;
 import net.azo.stringy.item.ModItemGroups;
 import net.azo.stringy.item.ModItems;
@@ -35,6 +37,8 @@ public class Stringy implements ModInitializer {
 		ModFeatureGeneration.generateVegetation();
 		ModFeatureGeneration.generateOres();
 		ModFuelRegistry.AddItemsToFuelRegistry();
+		ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
 		LOGGER.info(MOD_ID + " initialised successfully!!!! :D");
 	}
 }
